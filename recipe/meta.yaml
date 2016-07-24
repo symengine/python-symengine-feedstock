@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine.py/archive/{{ commit }}.tar.gz
 
 build:
-  number: 2
+  number: 3
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
