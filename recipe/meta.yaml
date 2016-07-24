@@ -1,5 +1,5 @@
 {% set version = "0.1.0.dev0" %}
-{% set commit = "7ec6922a190f864a576e4a05866eb038f567e750" %}
+{% set commit = "97c5a21d0b5acf743c59ebce5d925d658698b322" %}
 
 package:
   name: python-symengine
@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine.py/archive/{{ commit }}.tar.gz
 
 build:
-  number: 3
+  number: 4
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
