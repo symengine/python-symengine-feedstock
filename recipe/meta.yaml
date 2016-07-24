@@ -1,5 +1,5 @@
 {% set version = "0.1.0.dev0" %}
-{% set commit = "9f4f9b029f6f237cc23f2a5b8de013a925cee866" %}
+{% set commit = "7ec6922a190f864a576e4a05866eb038f567e750" %}
 
 package:
   name: python-symengine
