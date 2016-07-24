@@ -1,5 +1,5 @@
 {% set version = "0.1.0.dev0" %}
-{% set commit = "6cb6ab05cfd311f1e598444d7bfa3fb56cda8dc9" %}
+{% set commit = "9f4f9b029f6f237cc23f2a5b8de013a925cee866" %}
 
 package:
   name: python-symengine
@@ -8,7 +8,6 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/symengine/symengine.py/archive/{{ commit }}.tar.gz
-  sha256: dd3aa94da143981b11104d6197dd6972ce12d367ac8a2b8836271a57f76b4ec6
 
 build:
   number: 1
