@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine.py/archive/{{ commit }}.tar.gz
 
 build:
-  number: 5
+  number: 0
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
@@ -19,12 +19,12 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine
+    - symengine     0.1.0.dev0
     - python
     - cython 0.23*
     - setuptools
   run:
-    - symengine
+    - symengine     0.1.0.dev0
     - python
 
 test:
