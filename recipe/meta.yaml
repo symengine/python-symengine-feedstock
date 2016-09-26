@@ -19,12 +19,12 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     
+    - symengine     0.2.0
     - python
     - cython 0.23*
     - setuptools
   run:
-    - symengine     
+    - symengine     0.2.0
     - python
 
 test:
