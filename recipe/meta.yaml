@@ -1,4 +1,4 @@
-{% set commit = "8235c0c20f980c0da6a170a2a7634bfdeadaa777" %}
+{% set commit = "1f6857cac8ce196dae41120820cfa5e944b1f2d8" %}
 {% set version = "0.2.0" %}
 
 package:
