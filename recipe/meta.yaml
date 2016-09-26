@@ -1,4 +1,4 @@
-{% set commit = "1f6857cac8ce196dae41120820cfa5e944b1f2d8" %}
+{% set commit = "v0.2.0" %}
 {% set version = "0.2.0" %}
 
 package:
@@ -21,7 +21,7 @@ requirements:
     - cmake
     - symengine     0.2.0
     - python
-    - cython 0.23*
+    - cython
     - setuptools
   run:
     - symengine     0.2.0
