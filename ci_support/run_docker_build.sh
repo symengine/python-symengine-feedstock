@@ -40,7 +40,7 @@ echo "$config" > ~/.condarc
 conda clean --lock
 
 conda update --yes --all
-conda install --yes conda-build
+conda install --yes conda-build=1.20.0
 conda info
 
 # Embarking on 3 case(s).
