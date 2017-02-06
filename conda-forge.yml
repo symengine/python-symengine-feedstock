@@ -1,5 +1,5 @@
 channels:
-  sources: [conda-forge, symengine]
+  sources: [symengine/label/dev, symengine, conda-forge, defaults]
   targets:
     - [symengine, dev]
 travis:

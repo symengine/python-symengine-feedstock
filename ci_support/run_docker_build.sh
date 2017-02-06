@@ -16,6 +16,7 @@ channels:
  - symengine/label/dev
  - symengine
  - conda-forge
+ - defaults
 
 conda-build:
  root-dir: /feedstock_root/build_artefacts
