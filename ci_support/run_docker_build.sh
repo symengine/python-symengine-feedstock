@@ -13,9 +13,8 @@ docker info
 config=$(cat <<CONDARC
 
 channels:
- - symengine
  - conda-forge
- - defaults # As we need conda-build
+ - symengine
 
 conda-build:
  root-dir: /feedstock_root/build_artefacts
@@ -26,8 +25,8 @@ CONDARC
 )
 
 cat << EOF | docker run -i \
-                        -v ${RECIPE_ROOT}:/recipe_root \
-                        -v ${FEEDSTOCK_ROOT}:/feedstock_root \
+                        -v "${RECIPE_ROOT}":/recipe_root \
+                        -v "${FEEDSTOCK_ROOT}":/feedstock_root \
                         -a stdin -a stdout -a stderr \
                         condaforge/linux-anvil \
                         bash || exit $?
@@ -47,17 +46,17 @@ source run_conda_forge_build_setup
     export CONDA_PY=27
     set +x
     conda build /recipe_root --quiet || exit 1
-    upload_or_check_non_existence /recipe_root symengine --channel=main || exit 1
-
-    set -x
-    export CONDA_PY=34
-    set +x
-    conda build /recipe_root --quiet || exit 1
-    upload_or_check_non_existence /recipe_root symengine --channel=main || exit 1
+    upload_or_check_non_existence /recipe_root symengine --channel=dev || exit 1
 
     set -x
     export CONDA_PY=35
     set +x
     conda build /recipe_root --quiet || exit 1
-    upload_or_check_non_existence /recipe_root symengine --channel=main || exit 1
+    upload_or_check_non_existence /recipe_root symengine --channel=dev || exit 1
+
+    set -x
+    export CONDA_PY=36
+    set +x
+    conda build /recipe_root --quiet || exit 1
+    upload_or_check_non_existence /recipe_root symengine --channel=dev || exit 1
 EOF
