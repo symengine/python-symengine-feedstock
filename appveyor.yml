@@ -51,8 +51,9 @@ install:
     # Add our channels.
     - cmd: conda config --set show_channel_urls true
     - cmd: conda config --remove channels defaults
-    - cmd: conda config --add channels symengine
     - cmd: conda config --add channels conda-forge
+    - cmd: conda config --add channels symengine
+    - cmd: conda config --add channels symengine/label/dev
 
     # Configure the VM.
     - cmd: conda install -n root --quiet --yes obvious-ci

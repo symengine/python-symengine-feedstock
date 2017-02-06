@@ -32,8 +32,9 @@ install:
 
       source /Users/travis/miniconda3/bin/activate root
       conda config --remove channels defaults
-      conda config --add channels symengine
       conda config --add channels conda-forge
+      conda config --add channels symengine
+      conda config --add channels symengine/label/dev
       conda config --set show_channel_urls true
       conda install --yes --quiet conda-forge-build-setup
       source run_conda_forge_build_setup
