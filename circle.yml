@@ -1,5 +1,6 @@
 checkout:
   post:
+    - ./ci_support/fast_finish_ci_pr_build.sh
     - ./ci_support/checkout_merge_commit.sh
 
 machine:
@@ -11,7 +12,6 @@ dependencies:
   # just to pull each time. #rollondockercaching
   override:
     - docker pull condaforge/linux-anvil
-
 test:
   override:
     # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
