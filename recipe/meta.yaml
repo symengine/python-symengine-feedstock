@@ -24,6 +24,7 @@ requirements:
     - cython
     - setuptools
     - llvmdev       3.9
+    - numpy
   run:
     - symengine     0.2.0.292.gd44e20c
     - python
