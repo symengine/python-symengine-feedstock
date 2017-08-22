@@ -1,5 +1,5 @@
-{% set commit = "b409536eb9029b274d2956ec14a7954a0089aa3a" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.0.41.g296fce14" %}
+{% set commit = "296fce1420634152e7e1353b61302b91c3a8dabe" %}
 
 package:
   name: python-symengine
@@ -19,13 +19,13 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     0.3.0
+    - symengine     0.3.0.192.g67b75b0b
     - python
     - cython
     - setuptools
     - llvmdev       >=3.9
   run:
-    - symengine     0.3.0
+    - symengine     0.3.0.192.g67b75b0b
     - python
     - numpy
 
