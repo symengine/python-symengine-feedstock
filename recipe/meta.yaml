@@ -1,5 +1,5 @@
 # Version should be what `git describe --tags` gives you at the `commit`
-{% set version = "0.3.0.84.a12f7365" %}
+{% set version = "0.3.0.84.ga12f736" %}
 {% set commit = "a12f736514baaa0ba457bd0250b511075bf1fc0e" %}
 
 package:
@@ -20,13 +20,13 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     0.3.0.237.g398a3f3
+    - symengine     0.3.0.270.ga7b1eef4
     - python
     - cython
     - setuptools
     - llvmdev       >=3.9
   run:
-    - symengine     0.3.0.237.g398a3f3
+    - symengine     0.3.0.270.ga7b1eef4
     - python
     - numpy
 
