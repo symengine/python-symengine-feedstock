@@ -1,6 +1,6 @@
 # Version should be what `git describe --tags` gives you at the `commit`
-{% set version = "0.3.0.84.ga12f736" %}
-{% set commit = "a12f736514baaa0ba457bd0250b511075bf1fc0e" %}
+{% set version = "0.3.0.103.g5496ffc" %}
+{% set commit = "5496ffcb4d9d24ee4af2754aafc124c5fc0e21c5" %}
 
 package:
   name: python-symengine
@@ -20,13 +20,13 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     0.3.0.270.ga7b1eef4
+    - symengine     0.3.0.353.g22cef70
     - python
     - cython
     - setuptools
     - llvmdev       >=3.9
   run:
-    - symengine     0.3.0.270.ga7b1eef4
+    - symengine     0.3.0.353.g22cef70
     - python
     - numpy
 
