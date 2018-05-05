@@ -1,6 +1,6 @@
 # Version should be what `git describe --tags` gives you at the `commit`
-{% set version = "0.3.0.103.g5496ffc" %}
-{% set commit = "5496ffcb4d9d24ee4af2754aafc124c5fc0e21c5" %}
+{% set version = "0.3.0.113.g52ee6b8" %}
+{% set commit = "52ee6b8b14891fe42d82fb10cb705e37d70b1a4a" %}
 
 package:
   name: python-symengine
@@ -25,10 +25,20 @@ requirements:
     - cython
     - setuptools
     - llvmdev       >=3.9
+    - gmp           6.*     # [unix]
+    - mpir          3.*     # [win]
+    - mpfr          3.*
+    - mpc           1.*
+    - libflint      2.5.*   # [unix]
   run:
     - symengine     0.3.0.353.g22cef70
     - python
     - numpy
+    - gmp           6.*     # [unix]
+    - mpir          3.*     # [win]
+    - mpfr          3.*
+    - mpc           1.*
+    - libflint      2.5.*   # [unix]
 
 test:
   requires:
