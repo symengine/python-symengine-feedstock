@@ -11,7 +11,7 @@ source:
   url: https://github.com/symengine/symengine.py/archive/{{ commit }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   skip: true        # [win and py<35]
   features:
     - vc14          # [win and py>=35]
@@ -20,23 +20,23 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     0.3.0.353.g22cef70
+    - symengine     0.3.0.430.gb3a2159
     - python
     - cython
     - setuptools
     - llvmdev       >=3.9
     - gmp           6.*     # [unix]
     - mpir          3.*     # [win]
-    - mpfr          3.*
+    - mpfr          4.*
     - mpc           1.*
     - libflint      2.5.*   # [unix]
   run:
-    - symengine     0.3.0.353.g22cef70
+    - symengine     0.3.0.430.gb3a2159
     - python
     - numpy
     - gmp           6.*     # [unix]
     - mpir          3.*     # [win]
-    - mpfr          3.*
+    - mpfr          4.*
     - mpc           1.*
     - libflint      2.5.*   # [unix]
 
