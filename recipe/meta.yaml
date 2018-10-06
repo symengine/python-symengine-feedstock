@@ -1,6 +1,6 @@
 # Version should be what `git describe --tags` gives you at the `commit`
-{% set version = "0.3.0.113.g52ee6b8" %}
-{% set commit = "52ee6b8b14891fe42d82fb10cb705e37d70b1a4a" %}
+{% set version = "0.3.0.136.g511453a" %}
+{% set commit = "511453a19ebcf21d15879bcbdc65b266cf07120d" %}
 
 package:
   name: python-symengine
