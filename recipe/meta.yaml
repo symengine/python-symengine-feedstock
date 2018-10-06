@@ -20,7 +20,7 @@ requirements:
   build:
     - toolchain
     - cmake
-    - symengine     0.3.0.430.gb3a2159
+    - symengine     0.3.0.481.g9b604b2
     - python
     - cython
     - setuptools
